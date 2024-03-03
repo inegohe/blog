@@ -6,8 +6,14 @@
     <title>Blog</title>
     <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript">
+        function active_page(){
+            let active=document.getElementById("blog");
+            active.setAttribute("class", "nav-link active");
+        }
+    </script>
 </head>
-<body>
+<body onload="active_page()">
     <div w3-include-html="/include/navbar.html"></div>
     <script src="/js/w3.js"></script>
     <div class="container">
@@ -24,12 +30,13 @@
                 <div class="row mb-4">
                     <div class="col-12">
                         Created by Ivan Khosler
+                        <p>Software Engineer and developer</p>
                     </div>
                     <div class="col">
                         <img src="/images/ivan_thumb.png" alt="author" width="50px">
                     </div>
                 </div>
-                <p>Whats Leadership? some of us think atleast weve figured something about the esence of leadership but i can affirm confidently that we actually know nothing.</p>
+                <p class="ldg-para">Whats Leadership? some of us think atleast weve figured something about the esence of leadership but i can affirm confidently that we actually know nothing.</p>
                 <p>Refactory has a great lots of mosules and while we are lelarning coding they thought it wise to add us a suplimentaly module of leadership development and i can say it has paid off very.</p>
                 <p>How many of us whenever we are interacting with someone we focus more on our opinion trashing the other party's in the process, or how many of us have chronical challenge keeping time or following schedules.</p>
                 <p>Through this leadership module i learned alot about my self and this is thank to my good fascilitator Julia so open to take on our questions however wild they seemed in our minds.</p>
@@ -37,6 +44,7 @@
             </div>
             <div class="col-12 col-md-3">
                 <div w3-include-html="/include/latest_sidebar.html"></div>
+                <div w3-include-html="/include/comments.html"></div>
             </div>
         </div>
     </div>
