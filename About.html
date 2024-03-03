@@ -6,18 +6,32 @@
     <title>About</title>
     <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript">
+        function active_page(){
+            let active=document.getElementById("about");
+            active.setAttribute("class", "nav-link active");
+        }
+    </script>
 </head>
-<body>
+<body onload="active_page()">
     <div w3-include-html="/include/navbar.html"></div>
     <script src="/js/w3.js"></script>
     <div class="container">
         <div class="row border-bottom">
             <div class="col-md-6 col-12 pt-5">
-                <h1>About</h1>
-                <h4>The adventure never ends.</h4>
+                <h1 class="display-1">About</h1>
+                <h4><small class="text-muted">Who is <strong>"IVAN"</strong>?</small></h4>
+            </div>
+        </div>
+        <div class="row bg-image shadow-lg" style="background-image: url(/images/ivan_splash.jpg); background-size: cover; height: 60vh;">
+            <div class="col-5 mt-5 ms-5">
+                <h5>am ivan a student of software engineering, i love creating software and i enjoy reading.</h5>
+                <p>Email: ikhosler@gmail.com</p>
+
             </div>
         </div>
     </div>
     <script src="/css/bootstrap/js/bootstrap.bundle.js"></script>
+    <div w3-include-html="/include/footer.html"></div>
 </body>
 </html>

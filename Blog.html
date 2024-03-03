@@ -6,15 +6,21 @@
     <title>Blog</title>
     <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript">
+        function active_page(){
+            let active=document.getElementById("blog");
+            active.setAttribute("class", "nav-link active");
+        }
+    </script>
 </head>
-<body>
+<body onload="active_page()">
     <div w3-include-html="/include/navbar.html"></div>
     <script src="/js/w3.js"></script>
     <div class="container">
         <div class="row border-bottom">
             <div class="col-12 pt-5">
-                <h1>Blog</h1>
-                <h4>My personal diary.</h4>
+                <h1 class="display-1">Blog</h1>
+                <h4><small class="text-muted">My personal diary.</small></h4>
             </div>
         </div>
         <div class="row border-top pt-3">
@@ -23,8 +29,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-4 pb-2">
-                <div class="card" >
+            <div class="col-12 col-md-4 pb-5">
+                <div class="card shadow-lg" >
                     <img src="/images/web-dev_thumbnail_small.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <p class="card-text text-truncate">My Experience with the Introductory module of Web development at Refactory.</p>
@@ -33,7 +39,7 @@
                   </div>
             </div>
             <div class="col-12 col-md-4 pb-2">
-                <div class="card" >
+                <div class="card shadow-lg" >
                     <img src="/images/leadership_thumbnail_small.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <p class="card-text text-truncate">My Experience during the Leadership development module at Refactory.</p>
@@ -42,7 +48,7 @@
                   </div>
             </div>
             <div class="col-12 col-md-4 pb-2">
-                <div class="card" >
+                <div class="card shadow-lg" >
                     <img src="/images/blog-thumbnail_small.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <p class="card-text text-truncate">My very first Blog</p>
@@ -53,5 +59,6 @@
         </div>
     </div>
     <script src="/css/bootstrap/js/bootstrap.bundle.js"></script>
+    <div w3-include-html="/include/footer.html"></div>
 </body>
 </html>
