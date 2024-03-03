@@ -16,3 +16,15 @@
 /* :focus{
     outline: none;
 } */
+/* #splash{
+    
+} */
+.ldg-para::first-letter{
+    color: red;
+    font-size: 50px;
+    display: block;
+    float: left;
+    line-height: 0.5;
+    margin: 0px 10px 0px 0px;
+
+}
