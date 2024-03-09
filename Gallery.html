@@ -8,32 +8,38 @@
     <link rel="stylesheet" href="./css/style.css">
     <script type="text/javascript">
         function active_page(){
-            let active=document.getElementById("gallery");
-            active.setAttribute("class", "nav-link active");
+            document.getElementById("gallery").setAttribute("class", "nav-link active");
         }
     </script>
 </head>
 <body onload="active_page()">
     <div w3-include-html="./include/navbar.html"></div>
-    <script src="./js/w3.js"></script>
-    <div class="container">
-        <div class="row border-bottom">
-            <div class="col-md-6 col-12 pt-5">
-                <h1 class="display-1">Gallery</h1>
-                <h4><small class="text-muted">The adventure never ends.</small></h4>
+    <div class="page">
+        <div class="bg-wrapper"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12 pt-5 primary">
+                    <h1 class="display-1">Gallery</h1>
+                    <h4><small class="text-muted">The adventure never ends.</small></h4>
+                </div>
             </div>
-        </div>
-        <div class="row justify-content-center mt-5">
-            <div class="col-8">
-                <img class="pb-1 shadow-lg" src="./images/gallery/img2.jpg" style="height: 12em;">
-                <img class="pb-1 shadow-lg" src="./images/gallery/img1.jpg" style="height: 12em;">
-                <img class="pb-1 shadow-lg" src="./images/gallery/img4.jpg" style="height: 12em;">
-                <img class="pb-1 shadow-lg" src="./images/gallery/img3.jpg" style="height: 12em;">
-                <img class="pb-1 shadow-lg" src="./images/gallery/img6.jpg" style="height: 12em;">
-                <img class="pb-1 shadow-lg" src="./images/gallery/img5.jpg" style="height: 12em;">
+            <div class="row justify-content-center mt-5">
+                <div class="col-10">
+                    <div class="masonry">
+                        <div class="item"><img class="tiles" src="./images/gallery/img1.jpg"></div>
+                        <div class="item"><img class="tiles" src="./images/gallery/img2.jpg"></div>
+                        <div class="item"><img class="tiles" src="./images/gallery/img3.jpg"></div>
+                        <div class="item"><img class="tiles" src="./images/gallery/img4.jpg"></div>
+                        <div class="item"><img class="tiles" src="./images/gallery/img5.jpg"></div>
+                        <div class="item"><img class="tiles" src="./images/gallery/img2.jpg"></div>
+                        <div class="item"><img class="tiles" src="./images/gallery/img2.jpg"></div>
+                        <div class="item"><img class="tiles" src="./images/gallery/img2.jpg"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <script src="./js/w3.js"></script>
     <script src="./css/bootstrap/js/bootstrap.bundle.js"></script>
     <div w3-include-html="./include/footer.html"></div>
 </body>
