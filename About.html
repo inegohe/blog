@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script type="text/javascript">
         function active_page(){
-            let active=document.getElementById("about");
-            active.setAttribute("class", "nav-link active");
+            document.getElementById("about").active.setAttribute("class", "nav-link active");
         }
     </script>
 </head>
@@ -17,8 +16,9 @@
     <div w3-include-html="./include/navbar.html"></div>
     <script src="./js/w3.js"></script>
     <div class="container">
+        
         <div class="row border-bottom">
-            <div class="col-md-6 col-12 pt-5">
+            <div class="col-md-6 col-12 pt-5 primary">
                 <h1 class="display-1">About</h1>
                 <h4><small class="text-muted">Who is <strong>"IVAN"</strong>?</small></h4>
             </div>
