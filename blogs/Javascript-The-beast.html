@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./../../css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./../../css/style.css">
+    <script type="text/javascript">
+        function active_page(){
+            document.getElementById("blog").active.setAttribute("class", "nav-link active");
+        }
+    </script>
+</head>
+<body onload="active_page()">
+    <div w3-include-html="./../../include/navbar.html"></div>
+    <script src="./../../js/w3.js"></script>
+    <div class="container">
+        <div class="row border-bottom">
+            <div class="col-12 pt-5">
+                <h1>Blog</h1>
+                <p>updated on 18/03/2024</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 mt-2">
+                <h2>JavaScript the 100 year old beast.</h2>
+                <img width="100%" src="./../../images/java-blog.jpg" style="max-width: 500px;" alt="web development thumbnail">
+                <div class="row mb-4">
+                    <div class="col-2">
+                        <img src="./../../images/ivan_thumb.png" alt="author" width="50px">
+                    </div>
+                    <div class="col-10">
+                        Created by Ivan Khosler
+                        <p><small>Software Engineer and developer</small></p>
+                    </div>
+                </div>
+                <p class="ldg-para">What comes to your mind when one says they are a programmer. Well JavaScript has it all. From what I know it's all a beast until you discover it's vulnerability. JavaScript is script language that has undergone lots of updating well in an effort to try and make it's vulnerability less visible to the extent that there has been takeovers and handovers of the rights over the years.</p>
+                <p>Let no one deceive you JavaScript is a kind fair language that has been affected by the injustices poised at code in the modern century definitely the 21st. Ooh sorry we in the 22nd century. This science of centuries has always been so low level for my understanding *pun intended.</p>
+                <p>Well from my overall experience the best place to get a hold of the js syndrome and start living the code is refactory. Stay well as i keep you updated on this awesome adventure of coding or should I say programming!</p>
+            </div>
+            <div class="col-12 col-md-3">
+                <div w3-include-html="./../../include/latest_sidebar.html"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./../../css/bootstrap/js/bootstrap.bundle.js"></script>
+    <div w3-include-html="./../../include/footer.html"></div>
+</body>
+</html>
