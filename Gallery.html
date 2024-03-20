@@ -14,6 +14,13 @@
 </head>
 <body onload="active_page()">
     <div w3-include-html="./include/navbar.html"></div>
+    <div class="container-fluid" id="modalBg">
+        <div class="row">
+            <div class="col" id="modal">
+                <img id="modal-content" src="">
+            </div>
+        </div>
+    </div>
     <div class="page">
         <div class="bg-wrapper"></div>
         <div class="container">
@@ -26,20 +33,21 @@
             <div class="row justify-content-center mt-5">
                 <div class="col-10">
                     <div class="masonry">
-                        <div class="item"><img class="tiles" src="./images/gallery/img1.jpg"></div>
-                        <div class="item"><img class="tiles" src="./images/gallery/img2.jpg"></div>
-                        <div class="item"><img class="tiles" src="./images/gallery/img3.jpg"></div>
-                        <div class="item"><img class="tiles" src="./images/gallery/img4.jpg"></div>
-                        <div class="item"><img class="tiles" src="./images/gallery/img5.jpg"></div>
-                        <div class="item"><img class="tiles" src="./images/gallery/img2.jpg"></div>
-                        <div class="item"><img class="tiles" src="./images/gallery/img2.jpg"></div>
-                        <div class="item"><img class="tiles" src="./images/gallery/img2.jpg"></div>
+                        <div class="item" onclick="modal()"><img class="tiles" src="./images/gallery/img1.jpg"></div>
+                        <div class="item" onclick="modal()"><img class="tiles" src="./images/gallery/img2.jpg"></div>
+                        <div class="item" onclick="modal()"><img class="tiles" src="./images/gallery/img3.jpg"></div>
+                        <div class="item" onclick="modal()"><img class="tiles" src="./images/gallery/img4.jpg"></div>
+                        <div class="item" onclick="modal()"><img class="tiles" src="./images/gallery/img5.jpg"></div>
+                        <div class="item" onclick="modal()"><img class="tiles" src="./images/gallery/img2.jpg"></div>
+                        <div class="item" onclick="modal()"><img class="tiles" src="./images/gallery/img2.jpg"></div>
+                        <div class="item" onclick="modal()"><img class="tiles" src="./images/gallery/img2.jpg"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="./js/w3.js"></script>
+    <script src="./scripts/gallery.js"></script>
     <script src="./css/bootstrap/js/bootstrap.bundle.js"></script>
     <div w3-include-html="./include/footer.html"></div>
 </body>
