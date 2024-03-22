@@ -136,12 +136,27 @@ html {
     top: 0;
     left: 0;
     margin-top: 3rem;
-    height: 100vw;
+    height: 20rem;
     width: 100%;
     background-color: #29b6f6;
 }
 .page .container{
     z-index: 2;
+}
+
+/* page header */
+.head-sect{
+  margin-top: 3rem;
+  background-color: #29b6f6;
+  height: 20rem;
+  width: 100%;
+}
+
+.sec-head-sect{
+  margin-top: 3rem;
+  background-color: #29b6f6;
+  height: 12rem;
+  width: 100%;
 }
 
 /* blog header background */
@@ -216,6 +231,15 @@ html {
   display: none;
 }
 
+/* .form-control{
+  background-color: #fff0;
+  color: white;
+}
+.form-control:focus{
+  background-color: rgba(255, 255, 255, 0.288);
+  color: white;
+}
+ */
 
 /* Customized form animation */
 :focus {
@@ -246,4 +270,46 @@ html {
   width: 100%;
   transition: 0.4s;
   left: 0;
+}
+
+.hero-image img{
+  display: none;
+}
+
+@media only screen and (min-width: 760px) {
+  .hero-image img{
+    display: block;
+  width: 50vw;
+  max-width: 30rem;
+  position: absolute;
+  top: 4rem;
+  right: 5vw;
+  }
+}
+
+.float-image{
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .float-image{
+    width: 15rem;
+    max-width: 30rem;
+    position: absolute;
+    top: 5rem;
+    right: 5vw;
+    display: block;
+  }
+}
+
+.float-image-small{
+  display: none;
+}
+
+@media only screen and (max-width: 699px) {
+  .float-image-small{
+    width: 15rem;
+    max-width: 30rem;
+    display: block;
+  }
 }

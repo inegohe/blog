@@ -1,37 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./../assets/css/all.css">
     <script type="text/javascript">
-        function active_page(){
+        function active_page() {
             document.getElementById("about").active.setAttribute("class", "nav-link active");
         }
     </script>
 </head>
+
 <body onload="active_page()">
-    <div w3-include-html="./include/navbar.html"></div>
-    <script src="./js/w3.js"></script>
-    <div class="container">
-        
-        <div class="row border-bottom">
-            <div class="col-md-6 col-12 pt-5 primary">
-                <h1 class="display-1">About</h1>
-                <h4><small class="text-muted">Who is <strong>"IVAN"</strong>?</small></h4>
+    <div class="container-fluid">
+        <div w3-include-html="./include/navbar.html"></div>
+        <div style="width: auto;" class="row sec-head-sect">
+            <div class="col">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class=" col-md-6 col-12 pt-5 primary">
+                                    <h1 class="display-1">About</h1>
+                                    <h4><small class="text-muted">Who is <strong>"IVAN"</strong>?</small></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row bg-image shadow-lg" style="background-color:rosybrown; ">
-            <div class="col-12 col-md-5 mt-5 ms-5">
-                <h5>am ivan a student of software engineering, i love creating software and i enjoy reading.</h5>
-                <p>Email: ikhosler@gmail.com</p>
+        <div class="row justify-content-center">
+            <div class="col">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-md-11">
+                                    <img class="shadow float-image-small" src="/images/ivan_potrait_splash-01.png"
+                                        style="width:85vw; max-width:300px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-11 mt-5 text-md-start text-center">
+                            <h5>am ivan a student of software engineering, i love creating software and i enjoy reading.
+                            </h5>
+                            <p>Email: ikhosler@gmail.com</p>
 
+                        </div>
+                        <div class="col-12">
+                            <div w3-include-html="./include/socials.html"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-5 col-12">
+                <img class="shadow float-image" src="/images/ivan_potrait_splash-01.png" width="300px">
             </div>
         </div>
     </div>
+    <script src="./js/w3.js"></script>
     <script src="./css/bootstrap/js/bootstrap.bundle.js"></script>
     <div w3-include-html="./include/footer.html"></div>
 </body>
+
 </html>

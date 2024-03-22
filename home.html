@@ -7,9 +7,10 @@
     <title>Home</title>
     <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./../assets/css/all.css">
     <link rel="icon" type="image/x-icon" href="./images/blog logo-01.png">
     <script type="text/javascript">
-        function active_page(){
+        function active_page() {
             document.getElementById("home").active.setAttribute("class", "nav-link active");
         }
     </script>
@@ -17,49 +18,63 @@
 
 <body onload="active_page()">
     <div class="container-fluid" id="appPage">
-    <div class="row">
-        <div class="col-12">
-            <div w3-include-html="./include/navbar.html"></div>
-    <div class="page h-100 pt-4">
-        <div class="bg-wrapper"></div>
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col col-md-6">
-                    <div class="row primary justify-content-center justify-content-md-start">
-                        <div class="col-12 col-lg-2 me-2">
-                            <h1 class="display-1" id="pop">Hi,</h1>
-                        </div>
-                        <div class="col-12 col-lg-8">
-                            <h1 class="display-1" id="pop">am Ivan</h1>
-                        </div>
-                        <div class="col-12 mb-2">
-                            <h4><small class="text-muted " id="zoom">Welocome to my personal Blog.</small></h4>
-                        </div>
-                        <div class="col-12 mt-5 mb-4">
-                            <div w3-include-html="./include/socials.html"></div> 
-                        </div>
-                        <div class="col-10 col-md-4 mt-5">
-                            <div class="d-grid">
-                                <a href="./Blog.html" class="btn btn-outline-dark" role="button"><strong id="zoom">Explore</strong></a>
+        <div w3-include-html="./include/navbar.html"></div>
+        <div class="row">
+            <div class="col head-sect">
+                <div class="container" style="height: 100%;">
+                    <div class="row justify-content-md-start align-items-center justify-content-center"
+                        style="height: 100%;">
+                        <div class="col col-md-6 ">
+                            <div class="row primary justify-content-center justify-content-md-start ">
+                                <div class="col-12 col-lg-2 me-2">
+                                    <h1 class="display-1" id="pop">Hi,</h1>
+                                </div>
+                                <div class="col-12 col-lg-8">
+                                    <h1 class="display-1" id="pop">am Ivan</h1>
+                                </div>
+                                <div class="col-12 mb-2">
+                                    <h4><small class="text-muted " id="zoom">Welocome to my personal Blog.</small>
+                                    </h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="d-none d-md-block col-md-5 mt-5">
-                    <img src="./images/ivanP.png" width="400em" >
+
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 mt-5 col-12">
+                            <div w3-include-html="./include/socials.html"></div>
+                        </div>
+                        <div class="col-6"></div>
+                        <div class="col-12 col-md-6 text-center text-md-start">
+                            <div class=" mt-5 mb-5">
+                                <a href="./Blog.html" style="width: 15rem;" class="btn btn-outline-dark"
+                                    role="button"><strong id="zoom">Explore</strong></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div w3-include-html="./include/footer.html"></div>
+            </div>
+        </div>
     </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="/images/ivanP.png">
+    </div>
+
+
     <script src="./js/w3.js"></script>
     <script src="./css/bootstrap/js/bootstrap.bundle.js"></script>
-    <div w3-include-html="./include/footer.html"></div>
-        </div>
-        <div class="col-12">
-            <div w3-include-html="./include/footer.html"></div>
-        </div>
-    </div>
-    </div>
 </body>
 
 </html>
