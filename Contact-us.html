@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,67 +8,75 @@
     <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <script type="text/javascript">
-        function active_page(){
+        function active_page() {
             document.getElementById("contact-us").active.setAttribute("class", "nav-link active");
         }
     </script>
 </head>
+
 <body onload="active_page()">
     <div w3-include-html="./include/navbar.html"></div>
     <div class="page">
         <div class="bg-wrapper"></div>
         <div class="container mt-5 secondary">
-        <div class="row justify-content-center">
-            <div class="col-md-6 col-12 primary" style="padding-top: 6rem;">
-                <div class="row">
-                    <div class="col border-bottom-md mb-md-3">
-                        <h1 class="display-1">Contact us</h1>
-                        <h4><small class="text-muted">for any inquiries or help reach us on</small></h4>
-                    </div>
-                    <div class="col-12 mt-md-5">
-                        <div w3-include-html="./include/socials.html"></div> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-11 mt-3 mb-3 pt-3 pb-5 rounded" style="background-color:white;">
-                <form>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="your full names here">
-                        <label for="floatingInput">Full Names</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Comments</label>
-                      </div>
-                    <button type="submit" class="btn btn-form float-end">Submit</button>
-                  </form>
-            </div>
-            <div class="col1-12">
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p><img src="./images/location-01.svg" width="50rem"> Kampala, Uganda</p>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <p><img src="./images/mail-01.svg" width="50rem"> ikhosler@gmail.com</p>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <p><img src="./images/pnumber-01.svg" width="50rem"> +256-774-051-262</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-12 primary" style="padding-top: 6rem;">
+                    <div class="row">
+                        <div class="col border-bottom-md mb-md-3">
+                            <h1 class="display-1">Contact Me</h1>
+                            <h4><small class="text-muted">for any inquiries or help reach me on</small></h4>
+                        </div>
+                        <div class="col-12 mt-md-5">
+                            <div w3-include-html="./include/socials.html"></div>
+                        </div>
                     </div>
                 </div>
-                
-                
-                
+                <div class="shadow col-md-4 col-11 mt-3 mb-3 pt-3 pb-5 rounded" style="background-color:white;">
+                    <form>
+                        <div class="mb-3 form-input">
+                            <input class="shadow-none form-control rounded-0" id="fname" type="text"
+                                placeholder="Your Name">
+                            <span class="focus-border"></span>
+
+                        </div>
+                        <div class="mb-3 form-input">
+                            <input class="shadow-none form-control rounded-0" id="email" type="email"
+                                placeholder="Your email">
+                            <span class="focus-border"></span>
+
+                        </div>
+                        <div class="mb-3 form-input">
+                            <textarea class="shadow-none form-control rounded-0" id="commentBox" style="height: 200px;"
+                                placeholder="Comment"></textarea>
+                            <span class="focus-border"></span>
+
+                        </div>
+                        <button type="submit" class="btn btn-form float-end">Submit</button>
+                    </form>
+                </div>
+                <div class="col1-12">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p><img src="./images/location-01.svg" width="50rem"> Kampala, Uganda</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <p><img src="./images/mail-01.svg" width="50rem"> ikhosler@gmail.com</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <p><img src="./images/pnumber-01.svg" width="50rem"> +256-774-051-262</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
             </div>
-            
-        </div>
         </div>
     </div>
     <script src="./js/w3.js"></script>
     <script src="./css/bootstrap/js/bootstrap.bundle.js"></script>
     <div w3-include-html="./include/footer.html"></div>
 </body>
+
 </html>
