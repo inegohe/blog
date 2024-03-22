@@ -44,7 +44,7 @@ function loadComments(){
 }
 
 function addComment(){
-    document.getElementById("comments").innerHTML += `<div class="row"><div class="col-1 mt-2" id="comment-avatar"><i class="fas fa-user" style="font-size: 2rem;"></i></div><div class="col" id="comment-body"><h4>${comments[comments.length-1].name}</h4><p>${comments[comments.length-1].comment}</p><small>${comments[comments.length-1].date}</small></div></div>`
+    document.getElementById("comments").innerHTML += `<div class="row"><div class="col-1 mt-2 me-2" id="comment-avatar"><i class="fas fa-user" style="font-size: 2rem;"></i></div><div class="col" id="comment-body"><h4>${comments[comments.length-1].name}</h4><p>${comments[comments.length-1].comment}</p><small>${comments[comments.length-1].date}</small></div></div>`
 }
 
 function clear(object){
