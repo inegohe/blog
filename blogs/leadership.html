@@ -12,7 +12,7 @@
         }
     </script>
 </head>
-<body onload="active_page()">
+<body onload="active_page(); loadComments()">
     <div w3-include-html="./../../include/navbar.html"></div>
     <script src="./../../js/w3.js"></script>
     <div class="container">
@@ -41,12 +41,15 @@
                 <p>Through this leadership module i learned alot about my self and this is thank to my good fascilitator Julia so open to take on our questions however wild they seemed in our minds.</p>
                 <p>All i can say is that self development is vital to our overall weelbeing and am a living example about how much transformation that self development can cause in one's life.</p>
             </div>
+            <div class="col-12 border-top mt-3 pt-3">
+                <div w3-include-html="./../../include/comment.html"></div>
+                </div>
             <div class="col-12 col-md-3">
-                <div w3-include-html="./../../include/latest_sidebar.html"></div>
-                <<!-- div w3-include-html="/include/comments.html"></div> -->
+                <div w3-include-html="./../../include/latest_sidebar.html"></div>div>
             </div>
         </div>
     </div>
+    <script src="./../../scripts/comments.js"></script>
     <script src="./../../css/bootstrap/js/bootstrap.bundle.js"></script>
     <div w3-include-html="./../../include/footer.html"></div>
 </body>

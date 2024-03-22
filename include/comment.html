@@ -1,0 +1,46 @@
+<div class="row" id="init-comment">
+    <div class="col-12 text-center">
+        <h4>Leave a comment</h4>
+    </div>
+    <div class="col">
+        <i class="fas fa-user" style="font-size: 5rem;"></i>
+    </div>
+    <div class="col-10">
+        <form id="initSubmitForm">
+            <div class="mb-3 form-floating">
+                <input class="shadow-none form-control rounded-0" id="fname" name="fname" type="text" placeholder="Your Name">
+                <label for="floatingTextinput" class="form-label">Full Names</label>
+            </div>            
+            <div class="mb-3 form-floating">
+                <input class="shadow-none form-control rounded-0" id="email" name="email" type="email" placeholder="Your email">
+                <label for="floatingTextinput" class="form-label">Email address</label>
+            </div>
+            <div class="mb-3 form-floating" >
+                <textarea name="comment" class="shadow-none form-control rounded-0" id="commentBox" style="height: 100px;" placeholder="Comment"></textarea>
+                <label for="floatingTextarea" class="form-label">Comment</label>
+            </div>
+            <div class="mb-3">
+                <input type="button" value="Submit" onclick="submitComment(false)" style="width: 10rem;" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="row mb-5">
+    <div class="mb-2 col-12 text-center">
+        <h4>Comments</h4>
+    </div>
+    <div class="col-10">
+        <form id="SubmitForm">
+            <div class="mb-3 form-floating">
+                <textarea name="comment" class="form-control rounded-0" id="commentBox" style="height: 100px;" placeholder="Leave a comment here"></textarea>
+                <label for="floatingTextarea" class="form-label">Comments</label>
+            </div>
+            <div class="mb-3">
+                <input type="button" value="Submit" onclick="submitComment(true)" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+    <div class="col" id="comments"></div>
+</div>

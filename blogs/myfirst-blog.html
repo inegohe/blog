@@ -6,13 +6,14 @@
     <title>Blog</title>
     <link rel="stylesheet" href="./../../css/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./../../css/style.css">
+    <link rel="stylesheet" href="./../assets/css/all.css">
     <script type="text/javascript">
         function active_page(){
             document.getElementById("blog").active.setAttribute("class", "nav-link active");
         }
     </script>
 </head>
-<body onload="active_page()">
+<body onload="active_page(); loadComments()">
     <div w3-include-html="./../../include/navbar.html"></div>
     <script src="./../../js/w3.js"></script>
     <div class="container">
@@ -26,29 +27,37 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-12 col-md-6 mt-2">
-                <h2>My Experience during the Leadership development module at Refactory.</h2>
-                <img width="100%" src="./../../images/leadership_thumbnail.jpg" alt="web development thumbnail">
-                <div class="row mb-4">
-                    <div class="col-2">
-                        <img src="./../../images/ivan_thumb.png" alt="author" width="50px">
+            <div class="col-12 col-md-6">
+                <div class="row">
+                    <div class="col-12 mt-2">
+                        <h2>My Experience during the Leadership development module at Refactory.</h2>
+                        <img width="100%" src="./../../images/leadership_thumbnail.jpg" alt="web development thumbnail">
+                        <div class="row mb-4">
+                            <div class="col-2">
+                                <img src="./../../images/ivan_thumb.png" alt="author" width="50px">
+                            </div>
+                            <div class="col-10">
+                                Created by Ivan Khosler
+                                <p><small>Software Engineer and developer</small></p>
+                            </div>
+                        </div>
+                        <p class="ldg-para">Whats Leadership? some of us think atleast weve figured something about the esence of leadership but i can affirm confidently that we actually know nothing.</p>
+                        <p>Refactory has a great lots of mosules and while we are lelarning coding they thought it wise to add us a suplimentaly module of leadership development and i can say it has paid off very.</p>
+                        <p>How many of us whenever we are interacting with someone we focus more on our opinion trashing the other party's in the process, or how many of us have chronical challenge keeping time or following schedules.</p>
+                        <p>Through this leadership module i learned alot about my self and this is thank to my good fascilitator Julia so open to take on our questions however wild they seemed in our minds.</p>
+                        <p>All i can say is that self development is vital to our overall weelbeing and am a living example about how much transformation that self development can cause in one's life.</p>
                     </div>
-                    <div class="col-10">
-                        Created by Ivan Khosler
-                        <p><small>Software Engineer and developer</small></p>
+                    <div class="col-12 border-top mt-3 pt-3">
+                    <div w3-include-html="./../../include/comment.html"></div>
                     </div>
                 </div>
-                <p class="ldg-para">Whats Leadership? some of us think atleast weve figured something about the esence of leadership but i can affirm confidently that we actually know nothing.</p>
-                <p>Refactory has a great lots of mosules and while we are lelarning coding they thought it wise to add us a suplimentaly module of leadership development and i can say it has paid off very.</p>
-                <p>How many of us whenever we are interacting with someone we focus more on our opinion trashing the other party's in the process, or how many of us have chronical challenge keeping time or following schedules.</p>
-                <p>Through this leadership module i learned alot about my self and this is thank to my good fascilitator Julia so open to take on our questions however wild they seemed in our minds.</p>
-                <p>All i can say is that self development is vital to our overall weelbeing and am a living example about how much transformation that self development can cause in one's life.</p>
             </div>
             <div class="col-12 col-md-3">
                 <div w3-include-html="./../../include/latest_sidebar.html"></div>
             </div>
         </div>
     </div>
+    <script src="./../../scripts/comments.js"></script>
     <script src="./../../css/bootstrap/js/bootstrap.bundle.js"></script>
     <div w3-include-html="./../../include/footer.html"></div>
 </body>

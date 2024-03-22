@@ -12,7 +12,7 @@
         }
     </script>
 </head>
-<body onload="active_page()">
+<body onload="active_page(); loadComments()">
     <div w3-include-html="./../../include/navbar.html"></div>
     <script src="./../../js/w3.js"></script>
     <div class="container">
@@ -40,11 +40,15 @@
                 <p>Anyways the journey has been an interesting one since day one to the extented that i've always looked forawrd everyday to another zoom call. We learnt alot and you can be suprised at how the brain can grasp content one which you couldn't imagine having a capable mindspace for.</p>
                 <p>Honestly can't wait to join the next class because this has really been nice and i know with such great fascilitators am sure to make a great software developer, kudos Refactory.</p>
             </div>
+            <div class="col-12 border-top mt-3 pt-3">
+                <div w3-include-html="./../../include/comment.html"></div>
+                </div>
             <div class="col-12 col-md-3">
                 <div w3-include-html="./../../include/latest_sidebar.html"></div>
             </div>
         </div>
     </div>
+    <script src="./../../scripts/comments.js"></script>
     <script src="./../../css/bootstrap/js/bootstrap.bundle.js"></script>
     <div w3-include-html="./../../include/footer.html"></div>
 </body>

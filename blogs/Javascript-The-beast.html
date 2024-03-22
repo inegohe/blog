@@ -12,7 +12,7 @@
         }
     </script>
 </head>
-<body onload="active_page()">
+<body onload="active_page(); loadComments()">
     <div w3-include-html="./../../include/navbar.html"></div>
     <script src="./../../js/w3.js"></script>
     <div class="container">
@@ -39,11 +39,15 @@
                 <p>Let no one deceive you JavaScript is a kind fair language that has been affected by the injustices poised at code in the modern century definitely the 21st. Ooh sorry we in the 22nd century. This science of centuries has always been so low level for my understanding *pun intended.</p>
                 <p>Well from my overall experience the best place to get a hold of the js syndrome and start living the code is refactory. Stay well as i keep you updated on this awesome adventure of coding or should I say programming!</p>
             </div>
+            <div class="col-12 border-top mt-3 pt-3">
+                <div w3-include-html="./../../include/comment.html"></div>
+                </div>
             <div class="col-12 col-md-3">
                 <div w3-include-html="./../../include/latest_sidebar.html"></div>
             </div>
         </div>
     </div>
+    <script src="./../../scripts/comments.js"></script>
     <script src="./../../css/bootstrap/js/bootstrap.bundle.js"></script>
     <div w3-include-html="./../../include/footer.html"></div>
 </body>

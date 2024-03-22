@@ -205,3 +205,45 @@ html {
   #modal-content{
     height: 80vh;
   }
+
+  /* form bottom boder */
+  .input-test{
+    border: none;
+    border-bottom: 1px solid black;
+  }
+
+#SubmitForm{
+  display: none;
+}
+
+
+/* Customized form animation */
+:focus {
+  outline: none;
+}
+
+.form-input{
+  width: auto;
+  position: relative;
+}
+
+.form-input .form-control{
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.form-control~.focus-border{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3399FF;
+  transition: 0.4s;
+}
+
+.form-control:focus~.focus-border{
+  width: 100%;
+  transition: 0.4s;
+  left: 0;
+}
